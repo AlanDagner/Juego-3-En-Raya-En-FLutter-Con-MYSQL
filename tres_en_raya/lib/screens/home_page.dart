@@ -184,7 +184,7 @@ class _HomeState extends State<Home> {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text("JUEGO DE 3 EN RAYA"),
+        title: Text("3 EN RAYA"),
         elevation: 0,
         backgroundColor:  Color.fromARGB(210, 10, 98, 186),
         actions: [
