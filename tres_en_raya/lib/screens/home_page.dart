@@ -23,13 +23,6 @@ class _HomeState extends State<Home> {
   bool clickTurno = false;
   int chance_flag = 0;
 
-  /*getJuegos() async {
-    final url = 'http://localhost:4000/api/resultados';
-
-    http.Response response = await http.get(Uri.parse(url));
-    debugPrint(response.body);
-  }*/
-
   void btnInicio() {
     labelList.replaceRange(0, 9, ["", "", "", "", "", "", "", "", ""]);
     ganador = "";
@@ -193,7 +186,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("JUEGO DE 3 EN RAYA"),
         elevation: 0,
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor:  Color.fromARGB(210, 10, 98, 186),
         actions: [
           IconButton(
               onPressed: () {
@@ -319,7 +312,7 @@ class _HomeState extends State<Home> {
                       Column(
                         children: <Widget>[
                           OutlinedButton(
-                              onPressed: null, child: Text('Jugador: $turno'))
+                              onPressed: null, child: Text('Turno: $turno'))
                         ],
                       ),
                       Column(

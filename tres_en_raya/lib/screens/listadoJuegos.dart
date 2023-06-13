@@ -109,7 +109,7 @@ class ListadoDeJuegosState extends State<ListadoDeJuegos> {
   List<Widget> _listJuegos(List<Juego> data) {
     List<Widget> juegos = [];
 
-    for (var juego in data) {
+    for (var juego in data.reversed) {
       juegos.add(Container(
         margin: const EdgeInsets.only(bottom: 20.0),
         child: Row(
