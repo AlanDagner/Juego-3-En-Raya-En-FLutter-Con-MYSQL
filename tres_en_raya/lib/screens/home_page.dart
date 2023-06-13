@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
       turno = "J1:${_controllerJ1.value.text}-(X)";
     }
   }
-
+// logica del juego
   void matchCheck() {
     if ((labelList[0] == "X") &&
         (labelList[1] == "X") &&
